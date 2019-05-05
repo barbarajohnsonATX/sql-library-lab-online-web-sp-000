@@ -12,7 +12,7 @@ end
 
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT Characters.species, SUM(Characters.species) FROM Characters 
+  "SELECT Characters.species, COUNT(Characters.species) FROM Characters 
     ORDER BY COUNT(Characters.species) DESC
     LIMIT 1; "
 end
